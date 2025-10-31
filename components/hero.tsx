@@ -52,33 +52,30 @@ export function Hero() {
           </div>
         </div>
 
+        {/* Photo Section - Circular frame instead of rectangular */}
         <div className="relative flex justify-center items-center">
-          <div className="relative w-80 h-96">
-            {/* Background frames */}
-            <div className="absolute inset-0 bg-gradient-to-br from-white/30 to-pink-100/30 rounded-3xl transform rotate-3 blur-xl" />
-            <div className="absolute inset-4 bg-gradient-to-br from-pink-200/50 to-purple-200/50 rounded-3xl glass" />
+          <div className="relative">
+            {/* Outer glow circle */}
+            <div className="absolute inset-0 w-64 h-64 rounded-full bg-gradient-to-br from-white/40 to-pink-200/40 blur-2xl" />
 
-            {/* Image container with overflow hidden for rounded corners */}
-            <div className="absolute inset-0 rounded-3xl overflow-hidden flex items-center justify-center">
+            {/* Main circular frame with glass effect */}
+            <div className="relative w-64 h-64 rounded-full overflow-hidden border-4 border-white/60 shadow-2xl glass">
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Ni4BUiHRpmMCmwqjQYtvdl3AZed8Mg.png"
                 alt="Srinithi - VLSI and Embedded Systems Engineer"
-                width={320}
-                height={384}
+                width={256}
+                height={256}
                 className="w-full h-full object-cover"
                 priority
               />
             </div>
 
-            {/* Floating badge */}
-            <div className="absolute -bottom-6 -right-6 bg-gradient-to-br from-yellow-300 to-yellow-200 rounded-full p-4 shadow-lg border-4 border-white floating-shape">
-              <div className="flex items-center justify-center w-16 h-16">
-                <span className="text-2xl">✨</span>
-              </div>
+            {/* Floating sparkle badge */}
+            <div className="absolute -bottom-4 -right-4 bg-gradient-to-br from-yellow-300 to-yellow-200 rounded-full p-3 shadow-lg border-4 border-white floating-shape">
+              <span className="text-xl">✨</span>
             </div>
           </div>
         </div>
-        {/* </CHANGE> */}
       </div>
     </section>
   )

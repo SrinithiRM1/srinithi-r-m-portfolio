@@ -123,9 +123,9 @@
     @apply bg-background text-foreground;
   }
 
-  /* Dreamy gradient background with pastel colors */
+  /* Gradient background: pink at top, blue at bottom */
   body {
-    background: linear-gradient(180deg, #a8d8f0 0%, #b8a8f0 25%, #f0a8d8 50%, #fff5e6 75%, #f5f0ff 100%);
+    background: linear-gradient(180deg, #ffc0e0 0%, #e0c0ff 25%, #c0d8ff 50%, #8bb8ff 75%, #6aa3e8 100%);
     min-height: 100vh;
   }
 
