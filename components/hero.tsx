@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { Download, ArrowRight } from "lucide-react"
+import Image from "next/image"
 
 export function Hero() {
   return (
@@ -51,17 +52,22 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Right - Profile Image Area */}
         <div className="relative flex justify-center items-center">
-          <div className="relative w-80 h-80">
+          <div className="relative w-80 h-96">
+            {/* Background frames */}
             <div className="absolute inset-0 bg-gradient-to-br from-white/30 to-pink-100/30 rounded-3xl transform rotate-3 blur-xl" />
             <div className="absolute inset-4 bg-gradient-to-br from-pink-200/50 to-purple-200/50 rounded-3xl glass" />
-            <div className="absolute inset-0 bg-gradient-to-br from-white/50 to-purple-100/30 rounded-3xl flex items-center justify-center overflow-hidden">
-              <div className="w-full h-full bg-gradient-to-br from-purple-300/20 to-pink-300/20 flex items-center justify-center">
-                <svg className="w-40 h-40 text-purple-400" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-                </svg>
-              </div>
+
+            {/* Image container with overflow hidden for rounded corners */}
+            <div className="absolute inset-0 rounded-3xl overflow-hidden flex items-center justify-center">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Ni4BUiHRpmMCmwqjQYtvdl3AZed8Mg.png"
+                alt="Srinithi - VLSI and Embedded Systems Engineer"
+                width={320}
+                height={384}
+                className="w-full h-full object-cover"
+                priority
+              />
             </div>
 
             {/* Floating badge */}
@@ -72,6 +78,7 @@ export function Hero() {
             </div>
           </div>
         </div>
+        {/* </CHANGE> */}
       </div>
     </section>
   )
