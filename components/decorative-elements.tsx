@@ -119,7 +119,7 @@ export function DecorativeElements() {
         />
       </svg>
 
-      {/* Stars - scattered across the background */}
+      {/* Stars/Sparkles scattered across the background */}
       {[...Array(50)].map((_, i) => (
         <div
           key={`sparkle-${i}`}
@@ -136,6 +136,31 @@ export function DecorativeElements() {
             boxShadow: `0 0 ${Math.random() > 0.5 ? "8px" : "4px"} rgba(${Math.random() > 0.5 ? "255, 235, 59" : "255, 255, 255"}, ${Math.random() * 0.6 + 0.3})`,
           }}
         />
+      ))}
+
+      {[...Array(20)].map((_, i) => (
+        <div
+          key={`sakura-${i}`}
+          className="absolute sakura-petal"
+          style={{
+            width: `${Math.random() * 20 + 15}px`,
+            height: `${Math.random() * 20 + 15}px`,
+            top: `${Math.random() * 100}%`,
+            left: `${Math.random() * 100}%`,
+            opacity: Math.random() * 0.5 + 0.3,
+            animationDelay: `${Math.random() * 8}s`,
+            animationDuration: `${Math.random() * 10 + 8}s`,
+          }}
+        >
+          <svg viewBox="0 0 100 100" className="w-full h-full">
+            <circle cx="50" cy="30" r="15" fill="rgba(255, 192, 203, 0.8)" />
+            <circle cx="25" cy="50" r="15" fill="rgba(255, 182, 193, 0.7)" />
+            <circle cx="75" cy="50" r="15" fill="rgba(255, 182, 193, 0.7)" />
+            <circle cx="40" cy="75" r="15" fill="rgba(255, 160, 180, 0.7)" />
+            <circle cx="60" cy="75" r="15" fill="rgba(255, 160, 180, 0.7)" />
+            <circle cx="50" cy="55" r="10" fill="rgba(255, 200, 220, 0.9)" />
+          </svg>
+        </div>
       ))}
 
       {/* Floating clouds effect - subtle gradient blobs */}

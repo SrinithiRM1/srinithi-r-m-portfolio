@@ -10,10 +10,12 @@ import { Projects } from "@/components/projects"
 import { Contact } from "@/components/contact"
 import { DecorativeElements } from "@/components/decorative-elements"
 import { Footer } from "@/components/footer"
+import { CursorSparkle } from "@/components/cursor-sparkle"
 
 export default function Home() {
   return (
     <main className="min-h-screen">
+      <CursorSparkle />
       <DecorativeElements />
       <Header />
       <Hero />

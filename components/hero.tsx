@@ -13,9 +13,9 @@ export function Hero() {
           <div>
             <p className="text-sm font-medium text-purple-600 mb-2">Welcome 👋</p>
             <h1 className="text-5xl md:text-6xl font-bold text-slate-800 leading-tight">
-              Hi, I'm{" "}
+              I'm{" "}
               <span className="bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">
-                Srinithi
+                Srinithi RM
               </span>
             </h1>
           </div>
@@ -30,7 +30,11 @@ export function Hero() {
           </p>
 
           <div className="flex flex-wrap gap-4 pt-4">
-            <a href="#contact">
+            <a
+              href="https://drive.google.com/file/d/1mTKvbNeCiql4kPhl6m6scdkWJFHLnmV6/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button
                 size="lg"
                 className="gap-2 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white shadow-lg"
@@ -52,7 +56,7 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Photo Section - Circular frame instead of rectangular */}
+        {/* Photo Section - Circular frame */}
         <div className="relative flex justify-center items-center">
           <div className="relative">
             {/* Outer glow circle */}
